@@ -63,4 +63,12 @@ class User
     {
         return $this->name;
     }
+
+    /**
+     * @return string
+     */
+    function __toString()
+    {
+        return $this->getName();
+    }
 }

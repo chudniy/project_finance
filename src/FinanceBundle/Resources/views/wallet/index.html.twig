@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Wallets list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Balance</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for wallet in wallets %}
+            <tr>
+                <td><a href="{{ path('wallet_show', { 'id': wallet.id }) }}">{{ wallet.id }}</a></td>
+                <td>{{ wallet.name }}</td>
+                <td>{{ wallet.balance }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('wallet_show', { 'id': wallet.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('wallet_edit', { 'id': wallet.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('wallet_new') }}">Create a new wallet</a>
+        </li>
+    </ul>
+{% endblock %}

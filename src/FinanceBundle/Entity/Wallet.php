@@ -46,6 +46,14 @@ class Wallet
     private $user;
 
 
+    /**
+     * Wallet constructor.
+     */
+    public function __construct()
+    {
+        $this->balance = 0;
+    }
+
 
     /**
      * Get id

@@ -1,3 +1,21 @@
+finance_wallet:
+        resource: "@FinanceBundle/Resources/config/routing/wallet.yml"
+        prefix:   /wallet
+
+finance_user:
+        resource: "@FinanceBundle/Resources/config/routing/user.yml"
+        prefix:   /user
+
+finance_payment:
+        resource: "@FinanceBundle/Resources/config/routing/payment.yml"
+        prefix:   /payment
+
+finance_payment_category:
+    resource: "@FinanceBundle/Resources/config/routing/paymentcategory.yml"
+    prefix:   /payment_category
+
 finance_homepage:
     path:     /
     defaults: { _controller: FinanceBundle:Default:index }
+
+
