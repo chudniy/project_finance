@@ -1,0 +1,24 @@
+wallet_index:
+    path:     /
+    defaults: { _controller: "FinanceBundle:Wallet:index" }
+    methods:  GET
+
+wallet_show:
+    path:     /{id}/show
+    defaults: { _controller: "FinanceBundle:Wallet:show" }
+    methods:  GET
+
+wallet_new:
+    path:     /new
+    defaults: { _controller: "FinanceBundle:Wallet:new" }
+    methods:  [GET, POST]
+
+wallet_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FinanceBundle:Wallet:edit" }
+    methods:  [GET, POST]
+
+wallet_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FinanceBundle:Wallet:delete" }
+    methods:  DELETE

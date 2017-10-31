@@ -1,0 +1,24 @@
+payment_index:
+    path:     /
+    defaults: { _controller: "FinanceBundle:Payment:index" }
+    methods:  GET
+
+payment_show:
+    path:     /{id}/show
+    defaults: { _controller: "FinanceBundle:Payment:show" }
+    methods:  GET
+
+payment_new:
+    path:     /new
+    defaults: { _controller: "FinanceBundle:Payment:new" }
+    methods:  [GET, POST]
+
+payment_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FinanceBundle:Payment:edit" }
+    methods:  [GET, POST]
+
+payment_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FinanceBundle:Payment:delete" }
+    methods:  DELETE
