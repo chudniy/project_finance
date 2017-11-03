@@ -6,7 +6,6 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class WalletControllerTest extends WebTestCase
 {
-    /*
     public function testCompleteScenario()
     {
         // Create a new client to browse the application
@@ -15,11 +14,12 @@ class WalletControllerTest extends WebTestCase
         // Create a new entry in the database
         $crawler = $client->request('GET', '/wallet/');
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /wallet/");
-        $crawler = $client->click($crawler->selectLink('Create a new entry')->link());
+        $crawler = $client->click($crawler->selectLink('Create a new wallet')->link());
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
-            'financebundle_wallet[field_name]'  => 'Test',
+            'financebundle_wallet[name]'  => 'Test',
+            'financebundle_wallet[user]'  => '1',
             // ... other fields to fill
         ));
 
@@ -32,8 +32,8 @@ class WalletControllerTest extends WebTestCase
         // Edit the entity
         $crawler = $client->click($crawler->selectLink('Edit')->link());
 
-        $form = $crawler->selectButton('Update')->form(array(
-            'financebundle_wallet[field_name]'  => 'Foo',
+        $form = $crawler->selectButton('Edit')->form(array(
+            'financebundle_wallet[name]'  => 'Foo',
             // ... other fields to fill
         ));
 
@@ -50,6 +50,4 @@ class WalletControllerTest extends WebTestCase
         // Check the entity has been delete on the list
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());
     }
-
-    */
 }

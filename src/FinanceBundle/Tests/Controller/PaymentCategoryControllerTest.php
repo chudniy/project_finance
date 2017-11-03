@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class PaymentCategoryControllerTest extends WebTestCase
 {
-    /*
+
     public function testCompleteScenario()
     {
         // Create a new client to browse the application
@@ -15,11 +15,11 @@ class PaymentCategoryControllerTest extends WebTestCase
         // Create a new entry in the database
         $crawler = $client->request('GET', '/payment_category/');
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /payment_category/");
-        $crawler = $client->click($crawler->selectLink('Create a new entry')->link());
+        $crawler = $client->click($crawler->selectLink('Create a new paymentCategory')->link());
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
-            'financebundle_paymentcategory[field_name]'  => 'Test',
+            'financebundle_paymentcategory[name]'  => 'Test',
             // ... other fields to fill
         ));
 
@@ -32,8 +32,8 @@ class PaymentCategoryControllerTest extends WebTestCase
         // Edit the entity
         $crawler = $client->click($crawler->selectLink('Edit')->link());
 
-        $form = $crawler->selectButton('Update')->form(array(
-            'financebundle_paymentcategory[field_name]'  => 'Foo',
+        $form = $crawler->selectButton('Edit')->form(array(
+            'financebundle_paymentcategory[name]'  => 'Foo',
             // ... other fields to fill
         ));
 
@@ -51,5 +51,4 @@ class PaymentCategoryControllerTest extends WebTestCase
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());
     }
 
-    */
 }
