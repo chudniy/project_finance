@@ -19,7 +19,7 @@ before_script:
   - composer install
 
 script:
-  - if [ "$TARGET" = "phpunit" ]; then composer install --working-dir=src/Spartium/UploadedFileHandler; fi
+  - if [ "$TARGET" = "phpunit" ]; then composer install; fi
   - if [ "$TARGET" = "phpunit" ]; then bin/phpunit src/FinanceBundle/Tests --coverage-clover=coverage.clover; fi
 #  - if [ "$TARGET" = "phpunit" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
 #  - if [ "$TARGET" = "phpunit" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
