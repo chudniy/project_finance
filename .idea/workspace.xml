@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a49c43a1-32d1-4ca2-8961-385c84aab9f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.scrutinizer.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,85 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Refill.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-              <folding>
-                <element signature="e#120#160#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wallet.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="28" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fixtures.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/Fixtures.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-              <folding>
-                <element signature="e#129#172#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentCategory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/PaymentCategory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" column="117" lean-forward="false" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="117" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WalletType.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="253">
+              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -144,7 +66,6 @@
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/Fixtures.php" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php" />
@@ -152,6 +73,8 @@
         <option value="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php" />
+        <option value="$PROJECT_DIR$/.scrutinizer.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -265,56 +188,6 @@
               <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -364,7 +237,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509385395199</updated>
-      <workItem from="1509385396435" duration="62660000" />
+      <workItem from="1509385396435" duration="63768000" />
     </task>
     <task id="LOCAL-00001" summary="Install Symfony">
       <created>1509385558222</created>
@@ -541,13 +414,17 @@
       <option name="project" value="LOCAL" />
       <updated>1509914355820</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fix travis.yml">
+      <created>1509914808556</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1509914808556</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_Tests - 2017.11.05 at 20h 37m 26s.xml">
-      <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="Unit_Tests - 2017.11.05 at 20h 39m 25s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -575,9 +452,12 @@
     <history-entry file="Unit_Tests - 2017.11.05 at 22h 38m 54s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Unit_Tests - 2017.11.05 at 22h 47m 41s.xml">
+      <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62660000" />
+    <option name="totallyTimeSpent" value="63768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -589,10 +469,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.502965" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.49811321" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.49811321" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3200409" sideWeight="0.49811321" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3200409" sideWeight="0.49811321" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.49703503" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -910,14 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="217" column="22" lean-forward="false" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -945,7 +817,7 @@
     <entry file="file://$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/Fixtures.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
             <element signature="e#129#172#0#PHP" expanded="true" />
           </folding>
@@ -955,7 +827,7 @@
     <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
-          <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -963,7 +835,7 @@
     <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="28" selection-end-column="18" />
+          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="28" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -971,7 +843,7 @@
     <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
-          <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
           <folding>
             <element signature="e#120#160#0#PHP" expanded="true" />
           </folding>
@@ -990,14 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1021,7 +885,31 @@
     <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="201" column="19" lean-forward="true" selection-start-line="201" selection-start-column="19" selection-end-line="201" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.scrutinizer.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding />
         </state>
       </provider>
