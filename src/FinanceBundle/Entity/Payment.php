@@ -57,7 +57,7 @@ class Payment
     private $date;
 
     /**
-     * @var string
+     * @var integer
      *
      * @ORM\ManyToOne(targetEntity="PaymentCategory")
      * @ORM\JoinColumns({
@@ -215,7 +215,7 @@ class Payment
     /**
      * Get category
      *
-     * @return string
+     * @return integer
      */
     public function getCategory()
     {

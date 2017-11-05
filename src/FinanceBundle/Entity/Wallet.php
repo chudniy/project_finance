@@ -36,7 +36,7 @@ class Wallet
     private $balance;
 
     /**
-     * @var string
+     * @var integer
      *
      * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
@@ -130,7 +130,7 @@ class Wallet
     /**
      * Get user
      *
-     * @return string
+     * @return integer
      */
     public function getUser()
     {
