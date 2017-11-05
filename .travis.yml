@@ -24,3 +24,6 @@ script:
 #  - if [ "$TARGET" = "phpunit" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
 #  - if [ "$TARGET" = "phpmd" ]; then bin/phpmd src text ./phpmd-ruleset.xml --suffixes php; fi
 #  - if [ "$TARGET" = "phpcs" ]; then bin/phpcs $PWD/src --standard=PSR2; fi
+
+after_failure:
+    cat var/logs/test.log
