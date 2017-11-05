@@ -36,7 +36,7 @@ class Wallet
     private $balance = 0;
 
     /**
-     * @var integer
+     * @var \FinanceBundle\Entity\User
      *
      * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
@@ -130,7 +130,7 @@ class Wallet
     /**
      * Get user
      *
-     * @return integer
+     * @return \FinanceBundle\Entity\User
      */
     public function getUser()
     {
