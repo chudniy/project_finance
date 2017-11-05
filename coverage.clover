@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1509879986">
-  <project timestamp="1509879986">
+<coverage generated="1509885938">
+  <project timestamp="1509885938">
     <package name="FinanceBundle\Controller">
       <file name="/home/jack/www/project_finance/src/FinanceBundle/Controller/DefaultController.php">
         <class name="DefaultController" namespace="FinanceBundle\Controller">
