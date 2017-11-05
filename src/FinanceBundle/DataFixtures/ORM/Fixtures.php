@@ -19,14 +19,14 @@ class Fixtures extends Fixture
     {
         // create 3 users!
         for ($i = 0; $i < 4; $i++) {
-            $product = new User();
-            $product->setName('user'.$i);
+            $user = new User();
+            $user->setName('user'.$i);
         }
 
         // create 3 payment_categories!
         for ($i = 0; $i < 4; $i++) {
-            $product = new PaymentCategory();
-            $product->setName('category'.$i);
+            $category = new PaymentCategory();
+            $category->setName('category'.$i);
         }
 
         $manager->flush();
