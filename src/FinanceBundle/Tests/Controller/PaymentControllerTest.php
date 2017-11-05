@@ -25,6 +25,7 @@ class PaymentControllerTest extends WebTestCase
             'financebundle_payment[date][year]'  => '2017',
             'financebundle_payment[date][month]'  => '4',
             'financebundle_payment[date][day]'  => '13',
+            'financebundle_payment[category]'  => null,
         ));
 
         $client->submit($form);

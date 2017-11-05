@@ -13,7 +13,7 @@ class PaymentType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('amount')->add('description')->add('walletFrom')->add('walletTo')->add('date');
+        $builder->add('amount')->add('description')->add('walletFrom')->add('walletTo')->add('date')->add('category');
     }
     
     /**

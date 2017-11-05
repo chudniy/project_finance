@@ -44,12 +44,15 @@ class Refill
 
         $wallet = $this->em->getRepository('FinanceBundle:Wallet')->find($this->family_wallet_id);
 
-        $balance = $wallet->getBalance() + $amount;
+        if ($wallet) {
+            $balance = $wallet->getBalance() + $amount;
 
-        $wallet->setBalance($balance);
+            $wallet->setBalance($balance);
 
-        $this->em->persist($wallet);
-        $this->em->flush();
+            $this->em->persist($wallet);
+            $this->em->flush();
+        }
+
     }
 
     /**
@@ -65,9 +68,12 @@ class Refill
         $wallet_from = $this->em->getRepository('FinanceBundle:Wallet')->find($wallet_from_id);
         $wallet_to = $this->em->getRepository('FinanceBundle:Wallet')->find($wallet_to_id);
 
-        $wallet_from->setBalance($wallet_from->getBalance() + $amount);
-        $wallet_to->setBalance($wallet_to->getBalance() + $amount);
+        if ($wallet_from && $wallet_to) {
+            $wallet_from->setBalance($wallet_from->getBalance() + $amount);
+            $wallet_to->setBalance($wallet_to->getBalance() + $amount);
 
-        $this->em->flush();
+            $this->em->flush();
+        }
+
     }
 }

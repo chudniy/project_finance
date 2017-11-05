@@ -19,6 +19,7 @@ class WalletControllerTest extends WebTestCase
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
             'financebundle_wallet[name]'  => 'Test',
+            'financebundle_wallet[user]'  => null,
             // ... other fields to fill
         ));
 

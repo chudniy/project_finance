@@ -33,7 +33,7 @@ class Wallet
      *
      * @ORM\Column(name="balance", type="integer", nullable=true)
      */
-    private $balance;
+    private $balance = 0;
 
     /**
      * @var integer
