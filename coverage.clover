@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1509879986">
+  <project timestamp="1509879986">
+    <package name="FinanceBundle\Controller">
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Controller/DefaultController.php">
+        <class name="DefaultController" namespace="FinanceBundle\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="9" type="method" name="indexAction" crap="1" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <metrics loc="13" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Controller/PaymentCategoryController.php">
+        <class name="PaymentCategoryController" namespace="FinanceBundle\Controller">
+          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="46" coveredelements="46"/>
+        </class>
+        <line num="19" type="method" name="indexAction" crap="1" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="35" type="method" name="newAction" crap="3" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="60" type="method" name="showAction" crap="1" count="1"/>
+        <line num="62" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="76" type="method" name="editAction" crap="3" count="1"/>
+        <line num="78" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="80" type="stmt" count="1"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="90" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="101" type="method" name="deleteAction" crap="3" count="1"/>
+        <line num="103" type="stmt" count="1"/>
+        <line num="104" type="stmt" count="1"/>
+        <line num="106" type="stmt" count="1"/>
+        <line num="107" type="stmt" count="1"/>
+        <line num="108" type="stmt" count="1"/>
+        <line num="109" type="stmt" count="1"/>
+        <line num="112" type="stmt" count="1"/>
+        <line num="122" type="method" name="createDeleteForm" crap="1" count="1"/>
+        <line num="124" type="stmt" count="1"/>
+        <line num="125" type="stmt" count="1"/>
+        <line num="126" type="stmt" count="1"/>
+        <line num="127" type="stmt" count="1"/>
+        <metrics loc="130" ncloc="93" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="46" coveredelements="46"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Controller/PaymentController.php">
+        <class name="PaymentController" namespace="FinanceBundle\Controller">
+          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="47" coveredelements="47"/>
+        </class>
+        <line num="20" type="method" name="indexAction" crap="1" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="38" type="method" name="newAction" crap="3" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="66" type="method" name="showAction" crap="1" count="1"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="82" type="method" name="editAction" crap="3" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="97" type="stmt" count="1"/>
+        <line num="107" type="method" name="deleteAction" crap="3" count="1"/>
+        <line num="109" type="stmt" count="1"/>
+        <line num="110" type="stmt" count="1"/>
+        <line num="112" type="stmt" count="1"/>
+        <line num="113" type="stmt" count="1"/>
+        <line num="114" type="stmt" count="1"/>
+        <line num="115" type="stmt" count="1"/>
+        <line num="118" type="stmt" count="1"/>
+        <line num="128" type="method" name="createDeleteForm" crap="1" count="1"/>
+        <line num="130" type="stmt" count="1"/>
+        <line num="131" type="stmt" count="1"/>
+        <line num="132" type="stmt" count="1"/>
+        <line num="133" type="stmt" count="1"/>
+        <metrics loc="136" ncloc="97" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="47" coveredelements="47"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Controller/UserController.php">
+        <class name="UserController" namespace="FinanceBundle\Controller">
+          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="46" coveredelements="46"/>
+        </class>
+        <line num="19" type="method" name="indexAction" crap="1" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="37" type="method" name="newAction" crap="3" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="64" type="method" name="showAction" crap="1" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="82" type="method" name="editAction" crap="3" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="97" type="stmt" count="1"/>
+        <line num="109" type="method" name="deleteAction" crap="3" count="1"/>
+        <line num="111" type="stmt" count="1"/>
+        <line num="112" type="stmt" count="1"/>
+        <line num="114" type="stmt" count="1"/>
+        <line num="115" type="stmt" count="1"/>
+        <line num="116" type="stmt" count="1"/>
+        <line num="117" type="stmt" count="1"/>
+        <line num="120" type="stmt" count="1"/>
+        <line num="130" type="method" name="createDeleteForm" crap="1" count="1"/>
+        <line num="132" type="stmt" count="1"/>
+        <line num="133" type="stmt" count="1"/>
+        <line num="134" type="stmt" count="1"/>
+        <line num="135" type="stmt" count="1"/>
+        <metrics loc="138" ncloc="93" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="46" coveredelements="46"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Controller/WalletController.php">
+        <class name="WalletController" namespace="FinanceBundle\Controller">
+          <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="46" coveredelements="46"/>
+        </class>
+        <line num="19" type="method" name="indexAction" crap="1" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="37" type="method" name="newAction" crap="3" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="64" type="method" name="showAction" crap="1" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="68" type="stmt" count="1"/>
+        <line num="69" type="stmt" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="82" type="method" name="editAction" crap="3" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="91" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="97" type="stmt" count="1"/>
+        <line num="109" type="method" name="deleteAction" crap="3" count="1"/>
+        <line num="111" type="stmt" count="1"/>
+        <line num="112" type="stmt" count="1"/>
+        <line num="114" type="stmt" count="1"/>
+        <line num="115" type="stmt" count="1"/>
+        <line num="116" type="stmt" count="1"/>
+        <line num="117" type="stmt" count="1"/>
+        <line num="120" type="stmt" count="1"/>
+        <line num="130" type="method" name="createDeleteForm" crap="1" count="1"/>
+        <line num="132" type="stmt" count="1"/>
+        <line num="133" type="stmt" count="1"/>
+        <line num="134" type="stmt" count="1"/>
+        <line num="135" type="stmt" count="1"/>
+        <metrics loc="138" ncloc="93" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="40" elements="46" coveredelements="46"/>
+      </file>
+    </package>
+    <package name="FinanceBundle\Entity">
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Entity/Payment.php">
+        <class name="Payment" namespace="FinanceBundle\Entity">
+          <metrics methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="32" coveredelements="32"/>
+        </class>
+        <line num="76" type="method" name="getId" crap="1" count="1"/>
+        <line num="78" type="stmt" count="1"/>
+        <line num="88" type="method" name="setAmount" crap="1" count="1"/>
+        <line num="90" type="stmt" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="100" type="method" name="getAmount" crap="1" count="1"/>
+        <line num="102" type="stmt" count="1"/>
+        <line num="112" type="method" name="setDescription" crap="1" count="1"/>
+        <line num="114" type="stmt" count="1"/>
+        <line num="116" type="stmt" count="1"/>
+        <line num="124" type="method" name="getDescription" crap="1" count="1"/>
+        <line num="126" type="stmt" count="1"/>
+        <line num="136" type="method" name="setWalletFrom" crap="1" count="1"/>
+        <line num="138" type="stmt" count="1"/>
+        <line num="140" type="stmt" count="1"/>
+        <line num="148" type="method" name="getWalletFrom" crap="1" count="1"/>
+        <line num="150" type="stmt" count="1"/>
+        <line num="160" type="method" name="setWalletTo" crap="1" count="1"/>
+        <line num="162" type="stmt" count="1"/>
+        <line num="164" type="stmt" count="1"/>
+        <line num="172" type="method" name="getWalletTo" crap="1" count="1"/>
+        <line num="174" type="stmt" count="1"/>
+        <line num="184" type="method" name="setDate" crap="1" count="1"/>
+        <line num="186" type="stmt" count="1"/>
+        <line num="188" type="stmt" count="1"/>
+        <line num="196" type="method" name="getDate" crap="1" count="1"/>
+        <line num="198" type="stmt" count="1"/>
+        <line num="208" type="method" name="setCategory" crap="1" count="1"/>
+        <line num="210" type="stmt" count="1"/>
+        <line num="212" type="stmt" count="1"/>
+        <line num="220" type="method" name="getCategory" crap="1" count="1"/>
+        <line num="222" type="stmt" count="1"/>
+        <metrics loc="224" ncloc="101" classes="1" methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="32" coveredelements="32"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Entity/PaymentCategory.php">
+        <class name="PaymentCategory" namespace="FinanceBundle\Entity">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="9" coveredelements="9"/>
+        </class>
+        <line num="38" type="method" name="getId" crap="1" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="50" type="method" name="setName" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="62" type="method" name="getName" crap="1" count="2"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="70" type="method" name="__toString" crap="1" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <metrics loc="74" ncloc="36" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Entity/User.php">
+        <class name="User" namespace="FinanceBundle\Entity">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="9" coveredelements="9"/>
+        </class>
+        <line num="38" type="method" name="getId" crap="1" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="50" type="method" name="setName" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="62" type="method" name="getName" crap="1" count="2"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="70" type="method" name="__toString" crap="1" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <metrics loc="74" ncloc="36" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Entity/Wallet.php">
+        <class name="Wallet" namespace="FinanceBundle\Entity">
+          <metrics methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="20" coveredelements="20"/>
+        </class>
+        <line num="52" type="method" name="__construct" crap="1" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="63" type="method" name="getId" crap="1" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="75" type="method" name="setName" crap="1" count="1"/>
+        <line num="77" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="87" type="method" name="getName" crap="1" count="1"/>
+        <line num="89" type="stmt" count="1"/>
+        <line num="99" type="method" name="setBalance" crap="1" count="1"/>
+        <line num="101" type="stmt" count="1"/>
+        <line num="103" type="stmt" count="1"/>
+        <line num="111" type="method" name="getBalance" crap="1" count="2"/>
+        <line num="113" type="stmt" count="2"/>
+        <line num="123" type="method" name="setUser" crap="1" count="1"/>
+        <line num="125" type="stmt" count="1"/>
+        <line num="127" type="stmt" count="1"/>
+        <line num="135" type="method" name="getUser" crap="1" count="1"/>
+        <line num="137" type="stmt" count="1"/>
+        <metrics loc="139" ncloc="64" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="20" coveredelements="20"/>
+      </file>
+    </package>
+    <package name="FinanceBundle">
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/FinanceBundle.php">
+        <class name="FinanceBundle" namespace="FinanceBundle">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="9" ncloc="9" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="FinanceBundle\Form">
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Form/PaymentCategoryType.php">
+        <class name="PaymentCategoryType" namespace="FinanceBundle\Form">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="14" type="method" name="buildForm" crap="1" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="22" type="method" name="configureOptions" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="32" type="method" name="getBlockPrefix" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <metrics loc="38" ncloc="29" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Form/PaymentType.php">
+        <class name="PaymentType" namespace="FinanceBundle\Form">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="14" type="method" name="buildForm" crap="1" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="22" type="method" name="configureOptions" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="32" type="method" name="getBlockPrefix" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <metrics loc="38" ncloc="29" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Form/UserType.php">
+        <class name="UserType" namespace="FinanceBundle\Form">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="14" type="method" name="buildForm" crap="1" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="22" type="method" name="configureOptions" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="32" type="method" name="getBlockPrefix" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <metrics loc="38" ncloc="29" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Form/WalletType.php">
+        <class name="WalletType" namespace="FinanceBundle\Form">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="14" type="method" name="buildForm" crap="1" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="22" type="method" name="configureOptions" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="32" type="method" name="getBlockPrefix" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <metrics loc="38" ncloc="29" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+    </package>
+    <package name="FinanceBundle\Service">
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Service/Refill.php">
+        <class name="Refill" namespace="FinanceBundle\Service">
+          <metrics methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="9" elements="21" coveredelements="11"/>
+        </class>
+        <line num="32" type="method" name="__construct" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="41" type="method" name="familyBalance" crap="1" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="58" type="method" name="userWalletBalance" crap="2" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="0"/>
+        <line num="71" type="stmt" count="0"/>
+        <line num="72" type="stmt" count="0"/>
+        <metrics loc="72" ncloc="50" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="9" elements="21" coveredelements="11"/>
+      </file>
+    </package>
+    <package name="FinanceBundle\Tests\Controller">
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Tests/Controller/DefaultControllerTest.php">
+        <class name="DefaultControllerTest" namespace="FinanceBundle\Tests\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="9" type="method" name="testIndex" crap="1" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Tests/Controller/PaymentCategoryControllerTest.php">
+        <class name="PaymentCategoryControllerTest" namespace="FinanceBundle\Tests\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+        </class>
+        <line num="10" type="method" name="testCompleteScenario" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <metrics loc="54" ncloc="34" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php">
+        <class name="PaymentControllerTest" namespace="FinanceBundle\Tests\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+        </class>
+        <line num="9" type="method" name="testCompleteScenario" crap="1" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <metrics loc="58" ncloc="40" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Tests/Controller/UserControllerTest.php">
+        <class name="UserControllerTest" namespace="FinanceBundle\Tests\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+        </class>
+        <line num="9" type="method" name="testCompleteScenario" crap="1" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <metrics loc="52" ncloc="32" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+      </file>
+      <file name="/home/jack/www/project_finance/src/FinanceBundle/Tests/Controller/WalletControllerTest.php">
+        <class name="WalletControllerTest" namespace="FinanceBundle\Tests\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+        </class>
+        <line num="9" type="method" name="testCompleteScenario" crap="1" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <metrics loc="53" ncloc="33" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="20" coveredelements="20"/>
+      </file>
+    </package>
+    <metrics files="20" loc="1533" ncloc="957" classes="20" methods="74" coveredmethods="73" conditionals="0" coveredconditionals="0" statements="325" coveredstatements="316" elements="399" coveredelements="389"/>
+  </project>
+</coverage>
