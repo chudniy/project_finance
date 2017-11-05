@@ -24,7 +24,7 @@ before_script:
 script:
   - if [ "$TARGET" = "phpunit" ]; then bin/console doctrine:database:create; fi
   - if [ "$TARGET" = "phpunit" ]; then bin/console doctrine:schema:create; fi
-  - if [ "$TARGET" = "phpunit" ]; then bin/console doctrine:fixtures:load --purge-with-truncate; fi
+  - if [ "$TARGET" = "phpunit" ]; then echo "y" | bin/console doctrine:fixtures:load ; fi
   - if [ "$TARGET" = "phpunit" ]; then bin/phpunit -c phpunit.xml.dist --coverage-clover=coverage.clover; fi
 #  - if [ "$TARGET" = "phpunit" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
 #  - if [ "$TARGET" = "phpunit" ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
