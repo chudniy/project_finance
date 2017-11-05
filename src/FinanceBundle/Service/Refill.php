@@ -17,7 +17,7 @@ class Refill
     /**
      * @var int
      */
-    private $family_wallet_id = 1;
+    private $familyWalletId = 1;
 
     /**
      * @var EntityManagerInterface
@@ -42,7 +42,7 @@ class Refill
     {
         $amount = $payment->getAmount();
 
-        $wallet = $this->em->getRepository('FinanceBundle:Wallet')->find($this->family_wallet_id);
+        $wallet = $this->em->getRepository('FinanceBundle:Wallet')->find($this->familyWalletId);
 
         if ($wallet) {
             $balance = $wallet->getBalance() + $amount;
@@ -61,16 +61,16 @@ class Refill
     public function userWalletBalance(Payment $payment)
     {
         $amount = $payment->getAmount();
-        $wallet_from_id = $payment->getWalletFrom();
-        $wallet_to_id = $payment->getWalletTo();
+        $walletFromId = $payment->getWalletFrom();
+        $walletToId = $payment->getWalletTo();
 
 
-        $wallet_from = $this->em->getRepository('FinanceBundle:Wallet')->find($wallet_from_id);
-        $wallet_to = $this->em->getRepository('FinanceBundle:Wallet')->find($wallet_to_id);
+        $walletFrom = $this->em->getRepository('FinanceBundle:Wallet')->find($walletFromId);
+        $walletTo = $this->em->getRepository('FinanceBundle:Wallet')->find($walletToId);
 
-        if ($wallet_from && $wallet_to) {
-            $wallet_from->setBalance($wallet_from->getBalance() + $amount);
-            $wallet_to->setBalance($wallet_to->getBalance() + $amount);
+        if ($walletFrom && $walletTo) {
+            $walletFrom->setBalance($walletFrom->getBalance() + $amount);
+            $walletTo->setBalance($walletTo->getBalance() + $amount);
 
             $this->em->flush();
         }
