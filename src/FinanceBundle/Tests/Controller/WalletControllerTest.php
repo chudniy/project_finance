@@ -19,8 +19,7 @@ class WalletControllerTest extends WebTestCase
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
             'financebundle_wallet[name]'  => 'Test',
-            'financebundle_wallet[user]'  => null,
-            // ... other fields to fill
+            'financebundle_wallet[user]'  => 1,
         ));
 
         $client->submit($form);
@@ -45,7 +44,7 @@ class WalletControllerTest extends WebTestCase
 
         // Delete the entity
         $client->submit($crawler->selectButton('Delete')->form());
-        $crawler = $client->followRedirect();
+        $client->followRedirect();
 
         // Check the entity has been delete on the list
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());

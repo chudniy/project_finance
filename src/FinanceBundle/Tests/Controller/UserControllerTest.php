@@ -44,7 +44,7 @@ class UserControllerTest extends WebTestCase
 
         // Delete the entity
         $client->submit($crawler->selectButton('Delete')->form());
-        $crawler = $client->followRedirect();
+        $client->followRedirect();
 
         // Check the entity has been delete on the list
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());

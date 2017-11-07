@@ -25,7 +25,7 @@ class PaymentControllerTest extends WebTestCase
             'financebundle_payment[date][year]'  => '2017',
             'financebundle_payment[date][month]'  => '4',
             'financebundle_payment[date][day]'  => '13',
-            'financebundle_payment[category]'  => null,
+            'financebundle_payment[category]'  => 1,
         ));
 
         $client->submit($form);
@@ -50,7 +50,7 @@ class PaymentControllerTest extends WebTestCase
 
         // Delete the entity
         $client->submit($crawler->selectButton('Delete')->form());
-        $crawler = $client->followRedirect();
+        $client->followRedirect();
 
         // Check the entity has been delete on the list
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());

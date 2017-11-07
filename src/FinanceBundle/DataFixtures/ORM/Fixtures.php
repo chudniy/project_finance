@@ -21,12 +21,14 @@ class Fixtures extends Fixture
         for ($i = 0; $i < 4; $i++) {
             $user = new User();
             $user->setName('user'.$i);
+            $manager->persist($user);
         }
 
         // create 3 payment_categories!
         for ($i = 0; $i < 4; $i++) {
             $category = new PaymentCategory();
             $category->setName('category'.$i);
+            $manager->persist($category);
         }
 
         $manager->flush();
