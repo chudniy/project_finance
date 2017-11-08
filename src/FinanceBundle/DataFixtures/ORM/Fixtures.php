@@ -15,17 +15,16 @@ use FinanceBundle\Entity\User;
 
 class Fixtures extends Fixture
 {
+    /**
+     * @param ObjectManager $manager
+     */
     public function load(ObjectManager $manager)
     {
-        // create 3 users!
         for ($i = 0; $i < 4; $i++) {
             $user = new User();
             $user->setName('user'.$i);
             $manager->persist($user);
-        }
 
-        // create 3 payment_categories!
-        for ($i = 0; $i < 4; $i++) {
             $category = new PaymentCategory();
             $category->setName('category'.$i);
             $manager->persist($category);

@@ -67,7 +67,7 @@ class PaymentCategory
     /**
      * @return string
      */
-    function __toString()
+    public function __toString()
     {
         return $this->getName();
     }
