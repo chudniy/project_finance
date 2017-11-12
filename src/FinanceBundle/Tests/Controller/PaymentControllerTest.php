@@ -13,32 +13,40 @@ class PaymentControllerTest extends WebTestCase
 
         // Create a new entry in the database
         $crawler = $client->request('GET', '/payment/');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /payment/");
+        $this->assertEquals(
+            200,
+            $client->getResponse()->getStatusCode(),
+            "Unexpected HTTP status code for GET /payment/"
+        );
         $crawler = $client->click($crawler->selectLink('Create a new payment')->link());
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
-            'financebundle_payment[amount]'  => '100',
-            'financebundle_payment[description]'  => 'Test',
-            'financebundle_payment[walletFrom]'  => '1',
-            'financebundle_payment[walletTo]'  => '2',
-            'financebundle_payment[date][year]'  => '2017',
-            'financebundle_payment[date][month]'  => '4',
-            'financebundle_payment[date][day]'  => '13',
-            'financebundle_payment[category]'  => 1,
+            'financebundle_payment[amount]' => '100',
+            'financebundle_payment[description]' => 'Test',
+            'financebundle_payment[walletFrom]' => '1',
+            'financebundle_payment[walletTo]' => '2',
+            'financebundle_payment[date][year]' => '2017',
+            'financebundle_payment[date][month]' => '4',
+            'financebundle_payment[date][day]' => '13',
+            'financebundle_payment[category]' => 1,
         ));
 
         $client->submit($form);
         $crawler = $client->followRedirect();
 
         // Check data in the show view
-        $this->assertGreaterThan(0, $crawler->filter('td:contains("Test")')->count(), 'Missing element td:contains("Test")');
+        $this->assertGreaterThan(
+            0,
+            $crawler->filter('td:contains("Test")')->count(),
+            'Missing element td:contains("Test")'
+        );
 
         // Edit the entity
         $crawler = $client->click($crawler->selectLink('Edit')->link());
 
         $form = $crawler->selectButton('Edit')->form(array(
-            'financebundle_payment[amount]'  => '200',
+            'financebundle_payment[amount]' => '200',
             // ... other fields to fill
         ));
 

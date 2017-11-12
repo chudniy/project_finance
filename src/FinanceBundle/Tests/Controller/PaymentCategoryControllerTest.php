@@ -6,7 +6,6 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class PaymentCategoryControllerTest extends WebTestCase
 {
-
     public function testCompleteScenario()
     {
         // Create a new client to browse the application
@@ -14,7 +13,11 @@ class PaymentCategoryControllerTest extends WebTestCase
 
         // Create a new entry in the database
         $crawler = $client->request('GET', '/payment_category/');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /payment_category/");
+        $this->assertEquals(
+            200,
+            $client->getResponse()->getStatusCode(),
+            "Unexpected HTTP status code for GET /payment_category/"
+        );
         $crawler = $client->click($crawler->selectLink('Create a new paymentCategory')->link());
 
         // Fill in the form and submit it
@@ -27,7 +30,11 @@ class PaymentCategoryControllerTest extends WebTestCase
         $crawler = $client->followRedirect();
 
         // Check data in the show view
-        $this->assertGreaterThan(0, $crawler->filter('td:contains("Test")')->count(), 'Missing element td:contains("Test")');
+        $this->assertGreaterThan(
+            0,
+            $crawler->filter('td:contains("Test")')->count(),
+            'Missing element td:contains("Test")'
+        );
 
         // Edit the entity
         $crawler = $client->click($crawler->selectLink('Edit')->link());
@@ -50,5 +57,4 @@ class PaymentCategoryControllerTest extends WebTestCase
         // Check the entity has been delete on the list
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());
     }
-
 }

@@ -33,6 +33,4 @@ class WalletType extends AbstractType
     {
         return 'financebundle_wallet';
     }
-
-
 }

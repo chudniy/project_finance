@@ -33,6 +33,4 @@ class PaymentType extends AbstractType
     {
         return 'financebundle_payment';
     }
-
-
 }

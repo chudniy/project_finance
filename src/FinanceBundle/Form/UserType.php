@@ -33,6 +33,4 @@ class UserType extends AbstractType
     {
         return 'financebundle_user';
     }
-
-
 }

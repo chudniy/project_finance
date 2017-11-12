@@ -11,7 +11,6 @@ namespace FinanceBundle\Service;
 use Doctrine\ORM\EntityManagerInterface;
 use FinanceBundle\Entity\Payment;
 
-
 class Refill
 {
     /**
@@ -52,7 +51,6 @@ class Refill
             $this->em->persist($wallet);
             $this->em->flush();
         }
-
     }
 
     /**
@@ -74,6 +72,5 @@ class Refill
 
             $this->em->flush();
         }
-
     }
 }
