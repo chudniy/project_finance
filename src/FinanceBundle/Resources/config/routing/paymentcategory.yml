@@ -1,0 +1,24 @@
+payment_category_index:
+    path:     /
+    defaults: { _controller: "FinanceBundle:PaymentCategory:index" }
+    methods:  GET
+
+payment_category_show:
+    path:     /{id}/show
+    defaults: { _controller: "FinanceBundle:PaymentCategory:show" }
+    methods:  GET
+
+payment_category_new:
+    path:     /new
+    defaults: { _controller: "FinanceBundle:PaymentCategory:new" }
+    methods:  [GET, POST]
+
+payment_category_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FinanceBundle:PaymentCategory:edit" }
+    methods:  [GET, POST]
+
+payment_category_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FinanceBundle:PaymentCategory:delete" }
+    methods:  DELETE

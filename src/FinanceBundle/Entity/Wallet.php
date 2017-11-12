@@ -33,18 +33,26 @@ class Wallet
      *
      * @ORM\Column(name="balance", type="integer", nullable=true)
      */
-    private $balance;
+    private $balance = 0;
 
     /**
-     * @var string
+     * @var \FinanceBundle\Entity\User
      *
      * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="set null")
      * })
      */
     private $user;
 
+
+    /**
+     * Wallet constructor.
+     */
+    public function __construct()
+    {
+        $this->balance = 0;
+    }
 
 
     /**
@@ -122,7 +130,7 @@ class Wallet
     /**
      * Get user
      *
-     * @return string
+     * @return \FinanceBundle\Entity\User
      */
     public function getUser()
     {
