@@ -3,7 +3,6 @@
 namespace FinanceBundle\Controller;
 
 use FinanceBundle\Entity\Payment;
-use FinanceBundle\Service\Refill;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -32,10 +31,9 @@ class PaymentController extends Controller
      * Creates a new payment entity.
      *
      * @param Request $request
-     * @param Refill $refill
      * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
-    public function newAction(Request $request, Refill $refill)
+    public function newAction(Request $request)
     {
         $payment = new Payment();
         $form = $this->createForm('FinanceBundle\Form\PaymentType', $payment);
@@ -43,8 +41,6 @@ class PaymentController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-
-            $refill->familyBalance($payment);
 
             $em->persist($payment);
             $em->flush();
@@ -123,7 +119,7 @@ class PaymentController extends Controller
      *
      * @param Payment $payment The payment entity
      *
-     * @return \Symfony\Component\Form\Form The form
+     * @return \Symfony\Component\Form\FormInterface The form
      */
     private function createDeleteForm(Payment $payment)
     {

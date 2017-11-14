@@ -125,7 +125,7 @@ class WalletController extends Controller
      *
      * @param Wallet $wallet The wallet entity
      *
-     * @return \Symfony\Component\Form\Form The form
+     * @return \Symfony\Component\Form\FormInterface The form
      */
     private function createDeleteForm(Wallet $wallet)
     {

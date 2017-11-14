@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Paymentcategory controller.
+ * PaymentCategory controller.
  *
  */
 class PaymentCategoryController extends Controller
@@ -117,7 +117,7 @@ class PaymentCategoryController extends Controller
      *
      * @param PaymentCategory $paymentCategory The paymentCategory entity
      *
-     * @return \Symfony\Component\Form\Form The form
+     * @return \Symfony\Component\Form\FormInterface The form
      */
     private function createDeleteForm(PaymentCategory $paymentCategory)
     {

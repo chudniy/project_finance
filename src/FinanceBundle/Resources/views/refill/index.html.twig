@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Refills list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Walletfrom</th>
+                <th>Walletto</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for refill in refills %}
+            <tr>
+                <td><a href="{{ path('refill_show', { 'id': refill.id }) }}">{{ refill.id }}</a></td>
+                <td>{{ refill.amount }}</td>
+                <td>{{ refill.description }}</td>
+                <td>{{ refill.walletFrom }}</td>
+                <td>{{ refill.walletTo }}</td>
+                <td>{% if refill.date %}{{ refill.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('refill_show', { 'id': refill.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('refill_edit', { 'id': refill.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('refill_new') }}">Create a new refill</a>
+        </li>
+    </ul>
+{% endblock %}
