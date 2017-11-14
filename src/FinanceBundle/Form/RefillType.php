@@ -33,6 +33,4 @@ class RefillType extends AbstractType
     {
         return 'financebundle_refill';
     }
-
-
 }
