@@ -8,6 +8,7 @@
             <tr>
                 <th>Id</th>
                 <th>Amount</th>
+                <th>Category</th>
                 <th>Description</th>
                 <th>Walletfrom</th>
                 <th>Date</th>
@@ -19,6 +20,7 @@
             <tr>
                 <td><a href="{{ path('payment_show', { 'id': payment.id }) }}">{{ payment.id }}</a></td>
                 <td>{{ payment.amount }}</td>
+                <td>{{ payment.category }}</td>
                 <td>{{ payment.description }}</td>
                 <td>{{ payment.walletFrom }}</td>
                 <td>{% if payment.date %}{{ payment.date|date('Y-m-d') }}{% endif %}</td>

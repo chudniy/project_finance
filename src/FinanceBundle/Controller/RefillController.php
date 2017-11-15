@@ -16,11 +16,11 @@ class RefillController extends Controller
      * Lists all refill entities.
      *
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $refills = $em->getRepository('FinanceBundle:Refill')->findAll();
+        $refills = $em->getRepository('FinanceBundle:Refill')->refillByRequest($request);;
 
         return $this->render('FinanceBundle:refill:index.html.twig', array(
             'refills' => $refills,
