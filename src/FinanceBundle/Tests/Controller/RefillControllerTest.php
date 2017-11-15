@@ -24,8 +24,8 @@ class RefillControllerTest extends WebTestCase
         $form = $crawler->selectButton('Create')->form(array(
             'financebundle_refill[amount]' => 100,
             'financebundle_refill[description]' => 'Test',
-            'financebundle_refill[walletFrom]' => '7',
-            'financebundle_refill[walletTo]' => '8',
+            'financebundle_refill[walletFrom]' => '1',
+            'financebundle_refill[walletTo]' => '2',
             'financebundle_refill[date][year]' => '2017',
             'financebundle_refill[date][month]' => '4',
             'financebundle_refill[date][day]' => '13',
@@ -52,8 +52,8 @@ class RefillControllerTest extends WebTestCase
         $form = $crawler->selectButton('Edit')->form(array(
             'financebundle_refill[amount]' => 200,
             'financebundle_refill[description]' => 'Update',
-            'financebundle_refill[walletFrom]' => '7',
-            'financebundle_refill[walletTo]' => '8',
+            'financebundle_refill[walletFrom]' => '1',
+            'financebundle_refill[walletTo]' => '2',
             'financebundle_refill[date][year]' => '2017',
             'financebundle_refill[date][month]' => '4',
             'financebundle_refill[date][day]' => '13',

@@ -11,23 +11,25 @@ namespace FinanceBundle\DataFixtures\ORM;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use FinanceBundle\Entity\PaymentCategory;
-use FinanceBundle\Entity\User;
 
-class Fixtures extends Fixture
+class PaymentCategoryFixtures extends Fixture
 {
+    private $categories = array(
+        'category_1',
+        'category_2',
+    );
+
     /**
      * @param ObjectManager $manager
      */
     public function load(ObjectManager $manager)
     {
-        for ($i = 0; $i < 4; $i++) {
-            $user = new User();
-            $user->setName('user'.$i);
-            $manager->persist($user);
+        foreach ($this->categories as $key => $category) {
+            $entity = new PaymentCategory();
+            $entity->setName($category);
+            $manager->persist($entity);
 
-            $category = new PaymentCategory();
-            $category->setName('category'.$i);
-            $manager->persist($category);
+            $this->addReference('category_'. $key, $entity);
         }
 
         $manager->flush();
