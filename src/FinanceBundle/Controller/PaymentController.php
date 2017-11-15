@@ -14,13 +14,14 @@ class PaymentController extends Controller
 {
     /**
      * Lists all payment entities.
-     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $payments = $em->getRepository('FinanceBundle:Payment')->findAll();
+        $payments = $em->getRepository('FinanceBundle:Payment')->paymentByRequest($request);
 
         return $this->render('FinanceBundle:payment:index.html.twig', array(
             'payments' => $payments,

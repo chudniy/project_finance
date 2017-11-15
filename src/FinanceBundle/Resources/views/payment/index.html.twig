@@ -10,7 +10,6 @@
                 <th>Amount</th>
                 <th>Description</th>
                 <th>Walletfrom</th>
-                <th>Walletto</th>
                 <th>Date</th>
                 <th>Actions</th>
             </tr>
@@ -22,7 +21,6 @@
                 <td>{{ payment.amount }}</td>
                 <td>{{ payment.description }}</td>
                 <td>{{ payment.walletFrom }}</td>
-                <td>{{ payment.walletTo }}</td>
                 <td>{% if payment.date %}{{ payment.date|date('Y-m-d') }}{% endif %}</td>
                 <td>
                     <ul>

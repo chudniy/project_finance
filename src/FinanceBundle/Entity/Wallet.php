@@ -33,7 +33,7 @@ class Wallet
      *
      * @ORM\Column(name="balance", type="integer", nullable=true)
      */
-    private $balance = 0;
+    private $balance;
 
     /**
      * @var \FinanceBundle\Entity\User

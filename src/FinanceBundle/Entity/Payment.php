@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="payment", indexes={
  *     @ORM\Index(name="date", columns={"date"}),
  *     @ORM\Index(name="fk_payment_payment_category", columns={"category_id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="FinanceBundle\Repository\PaymentRepository")
  */
 class Payment
 {
@@ -38,18 +38,15 @@ class Payment
     private $description;
 
     /**
-     * @var integer
+     * @var \FinanceBundle\Entity\Wallet
      *
-     * @ORM\Column(name="wallet_from", type="integer", nullable=true)
+     * @ORM\ManyToOne(targetEntity="Wallet")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="wallet_from_id", referencedColumnName="id")
+     * })
      */
     private $walletFrom;
 
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="wallet_to", type="integer", nullable=true)
-     */
-    private $walletTo;
 
     /**
      * @var \DateTime
@@ -145,36 +142,13 @@ class Payment
     /**
      * Get walletFrom
      *
-     * @return integer
+     * @return Wallet
      */
     public function getWalletFrom()
     {
         return $this->walletFrom;
     }
 
-    /**
-     * Set walletTo
-     *
-     * @param integer $walletTo
-     *
-     * @return Payment
-     */
-    public function setWalletTo($walletTo)
-    {
-        $this->walletTo = $walletTo;
-
-        return $this;
-    }
-
-    /**
-     * Get walletTo
-     *
-     * @return integer
-     */
-    public function getWalletTo()
-    {
-        return $this->walletTo;
-    }
 
     /**
      * Set date
