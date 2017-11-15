@@ -22,16 +22,16 @@ class RefillRepository extends EntityRepository
     {
         $qb = $this->createQueryBuilder('payment');
 
-        if ($wallet_from = $request->get('wallet_from')) {
+        if ($walletFrom = $request->get('wallet_from')) {
             $qb->leftJoin('payment.walletFrom', 'walletFrom')
                 ->andWhere('walletFrom.name = :wallet_from')
-                ->setParameter(':wallet_from', $wallet_from);
+                ->setParameter(':wallet_from', $walletFrom);
         }
 
-        if ($wallet_to = $request->get('wallet_to')) {
+        if ($walletTo = $request->get('wallet_to')) {
             $qb->leftJoin('payment.walletTo', 'walletTo')
                 ->andWhere('walletTo.name = :wallet_to')
-                ->setParameter(':wallet_to', $wallet_to);
+                ->setParameter(':wallet_to', $walletTo);
         }
 
         if ($amount = $request->get('amount')) {

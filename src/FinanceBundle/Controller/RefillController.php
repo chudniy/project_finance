@@ -14,13 +14,14 @@ class RefillController extends Controller
 {
     /**
      * Lists all refill entities.
-     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $refills = $em->getRepository('FinanceBundle:Refill')->refillByRequest($request);;
+        $refills = $em->getRepository('FinanceBundle:Refill')->refillByRequest($request);
 
         return $this->render('FinanceBundle:refill:index.html.twig', array(
             'refills' => $refills,
