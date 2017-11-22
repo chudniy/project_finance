@@ -14,17 +14,10 @@
         <tbody>
         {% for paymentCategory in paymentCategories %}
             <tr>
-                <td><a href="{{ path('payment_category_show', { 'id': paymentCategory.id }) }}">{{ paymentCategory.id }}</a></td>
+                <td>{{ paymentCategory.id }}</td>
                 <td>{{ paymentCategory.name }}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('payment_category_show', { 'id': paymentCategory.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('payment_category_edit', { 'id': paymentCategory.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <a href="{{ path('payment_category_edit', { 'id': paymentCategory.id }) }}">edit</a>
                 </td>
             </tr>
         {% endfor %}

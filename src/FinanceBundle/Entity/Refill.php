@@ -3,6 +3,7 @@
 namespace FinanceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Refill
@@ -25,6 +26,12 @@ class Refill
      * @var int
      *
      * @ORM\Column(name="amount", type="integer")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Type(
+     *     type="integer",
+     *     message="The value {{ value }} is not a valid {{ type }}."
+     * )
      */
     private $amount;
 
@@ -32,6 +39,11 @@ class Refill
      * @var string
      *
      * @ORM\Column(name="description", type="text", length=65535)
+     *
+     * @Assert\Length(
+     *      max = 200,
+     *      maxMessage = "Your first name cannot be longer than {{ limit }} characters"
+     * )
      */
     private $description;
 
@@ -42,6 +54,8 @@ class Refill
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="wallet_from_id", referencedColumnName="id")
      * })
+     *
+     * @Assert\NotBlank()
      */
     private $walletFrom;
 
@@ -52,6 +66,8 @@ class Refill
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="wallet_to_id", referencedColumnName="id", onDelete="set null")
      * })
+     *
+     * @Assert\NotBlank()
      */
     private $walletTo;
 
@@ -59,6 +75,10 @@ class Refill
      * @var \DateTime
      *
      * @ORM\Column(name="date", type="date")
+     *
+     * @Assert\NotBlank()
+     * @Assert\Type("\DateTime")
+     *
      */
     private $date;
 

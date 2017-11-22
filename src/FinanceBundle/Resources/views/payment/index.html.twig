@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Payments list</h1>
 
-    <table>
+    <table class="table " width="100%">
         <thead>
             <tr>
                 <th>Id</th>
@@ -25,23 +25,14 @@
                 <td>{{ payment.walletFrom }}</td>
                 <td>{% if payment.date %}{{ payment.date|date('Y-m-d') }}{% endif %}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('payment_show', { 'id': payment.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('payment_edit', { 'id': payment.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <a href="{{ path('payment_show', { 'id': payment.id }) }}" class="btn btn-primary">Show</a>
+                    <a href="{{ path('payment_edit', { 'id': payment.id }) }}" class="btn btn-success">Edit</a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('payment_new') }}">Create a new payment</a>
-        </li>
-    </ul>
+    <a href="{{ path('payment_new') }}" class="btn btn-default">Create a new payment</a>
+
 {% endblock %}

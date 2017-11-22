@@ -15,18 +15,11 @@
         <tbody>
         {% for wallet in wallets %}
             <tr>
-                <td><a href="{{ path('wallet_show', { 'id': wallet.id }) }}">{{ wallet.id }}</a></td>
+                <td>{{ wallet.id }}</td>
                 <td>{{ wallet.name }}</td>
                 <td>{{ wallet.balance }}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('wallet_show', { 'id': wallet.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('wallet_edit', { 'id': wallet.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <a href="{{ path('wallet_edit', { 'id': wallet.id }) }}">edit</a>
                 </td>
             </tr>
         {% endfor %}

@@ -41,7 +41,6 @@ class WalletControllerTest extends WebTestCase
 
         $form = $crawler->selectButton('Edit')->form(array(
             'financebundle_wallet[name]'  => 'Foo',
-            'financebundle_wallet[balance]'  => 100,
         ));
 
         $client->submit($form);
@@ -49,7 +48,6 @@ class WalletControllerTest extends WebTestCase
 
         // Check the element contains an attribute with value equals "Foo"
         $this->assertGreaterThan(0, $crawler->filter('[value="Foo"]')->count(), 'Missing element [value="Foo"]');
-        $this->assertGreaterThan(0, $crawler->filter('[value="100"]')->count(), 'Missing element [value="100"]');
 
         // Delete the entity
         $client->submit($crawler->selectButton('Delete')->form());

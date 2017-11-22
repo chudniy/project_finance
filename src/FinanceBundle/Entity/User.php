@@ -3,6 +3,7 @@
 namespace FinanceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * User
@@ -25,6 +26,8 @@ class User
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255, nullable=true)
+     *
+     * @Assert\NotBlank()
      */
     private $name;
 

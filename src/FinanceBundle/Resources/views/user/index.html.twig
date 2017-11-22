@@ -14,13 +14,10 @@
         <tbody>
         {% for user in users %}
             <tr>
-                <td><a href="{{ path('user_show', { 'id': user.id }) }}">{{ user.id }}</a></td>
+                <td>{{ user.id }}</td>
                 <td>{{ user.name }}</td>
                 <td>
                     <ul>
-                        <li>
-                            <a href="{{ path('user_show', { 'id': user.id }) }}">show</a>
-                        </li>
                         <li>
                             <a href="{{ path('user_edit', { 'id': user.id }) }}">edit</a>
                         </li>

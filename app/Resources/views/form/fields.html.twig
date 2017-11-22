@@ -1,0 +1,16 @@
+{% extends 'bootstrap_3_layout.html.twig' %}
+
+{% block form_label %}
+    {{ parent() }}
+
+    {% if required %}
+        <span class="required" title="This field is required">*</span>
+    {% endif %}
+{% endblock %}
+
+{% block integer_widget %}
+    <div class="integer_widget">
+        {{ parent() }}
+    </div>
+{% endblock %}
+
