@@ -1,0 +1,24 @@
+{
+  "name": "project_finance",
+  "version": "1.0.0",
+  "description": "Finance [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/chudniy/project_finance/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/chudniy/project_finance/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/chudniy/project_finance/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/chudniy/project_finance/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/chudniy/project_finance/badges/build.png?b=master)](https://scrutinizer-ci.com/g/chudniy/project_finance/build-status/master) =========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chudniy/project_finance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chudniy/project_finance/issues"
+  },
+  "homepage": "https://github.com/chudniy/project_finance#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1"
+  }
+}
