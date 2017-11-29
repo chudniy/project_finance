@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Wallets list</h1>
 
-    <table>
+    <table class="table " width="100%">
         <thead>
             <tr>
                 <th>Id</th>
@@ -19,16 +19,13 @@
                 <td>{{ wallet.name }}</td>
                 <td>{{ wallet.balance }}</td>
                 <td>
-                    <a href="{{ path('wallet_edit', { 'id': wallet.id }) }}">edit</a>
+                    <a href="{{ path('wallet_edit', { 'id': wallet.id }) }}" class="btn btn-success">Edit</a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('wallet_new') }}">Create a new wallet</a>
-        </li>
-    </ul>
+    <a href="{{ path('wallet_new') }}" class="btn btn-default">Create a new wallet</a>
+
 {% endblock %}
