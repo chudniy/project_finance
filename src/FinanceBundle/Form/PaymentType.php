@@ -16,14 +16,15 @@ class PaymentType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('amount', IntegerType::class)
+        $builder
+            ->add('amount', IntegerType::class)
             ->add('category')
             ->add('walletFrom')
             ->add('description')
             ->add('date', DateType::class, array(
                 'widget' => 'single_text',
                 'attr' => array(
-                    'class' => 'date'
+                    'class' => 'datetimepicker'
                 )
             ));
     }

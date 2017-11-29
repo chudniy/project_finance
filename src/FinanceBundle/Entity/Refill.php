@@ -38,7 +38,7 @@ class Refill
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text", length=65535)
+     * @ORM\Column(name="description", type="text", length=65535, nullable=true)
      *
      * @Assert\Length(
      *      max = 200,

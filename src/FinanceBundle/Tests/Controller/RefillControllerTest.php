@@ -26,9 +26,7 @@ class RefillControllerTest extends WebTestCase
             'financebundle_refill[description]' => 'Test',
             'financebundle_refill[walletFrom]' => '1',
             'financebundle_refill[walletTo]' => '2',
-            'financebundle_refill[date][year]' => '2017',
-            'financebundle_refill[date][month]' => '4',
-            'financebundle_refill[date][day]' => '13',
+            'financebundle_refill[date]' => '2017-04-13',
         ));
 
         $client->submit($form);
@@ -54,9 +52,7 @@ class RefillControllerTest extends WebTestCase
             'financebundle_refill[description]' => 'Update',
             'financebundle_refill[walletFrom]' => '1',
             'financebundle_refill[walletTo]' => '2',
-            'financebundle_refill[date][year]' => '2017',
-            'financebundle_refill[date][month]' => '4',
-            'financebundle_refill[date][day]' => '13',
+            'financebundle_refill[date]' => '2017-04-13',
         ));
 
         $client->submit($form);

@@ -2,9 +2,12 @@
 
 namespace FinanceBundle\Form;
 
+use FinanceBundle\Entity\Refill;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 
 class RefillType extends AbstractType
 {
@@ -13,7 +16,17 @@ class RefillType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('amount')->add('description')->add('walletFrom')->add('walletTo')->add('date');
+        $builder
+            ->add('amount', IntegerType::class)
+            ->add('description')
+            ->add('walletFrom')
+            ->add('walletTo')
+            ->add('date', DateType::class, array(
+                'widget' => 'single_text',
+                'attr' => array(
+                    'class' => 'datetimepicker'
+                )
+            ));
     }
     
     /**
@@ -22,7 +35,7 @@ class RefillType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'FinanceBundle\Entity\Refill'
+            'data_class' => Refill::class
         ));
     }
 
