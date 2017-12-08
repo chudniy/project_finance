@@ -23,6 +23,7 @@ class PaymentType extends AbstractType
             ->add('description')
             ->add('date', DateType::class, array(
                 'widget' => 'single_text',
+                'html5' => false,
                 'attr' => array(
                     'class' => 'datetimepicker'
                 )

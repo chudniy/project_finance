@@ -23,6 +23,7 @@ class RefillType extends AbstractType
             ->add('walletTo')
             ->add('date', DateType::class, array(
                 'widget' => 'single_text',
+                'html5' => false,
                 'attr' => array(
                     'class' => 'datetimepicker'
                 )
