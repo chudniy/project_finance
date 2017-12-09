@@ -31,6 +31,7 @@ class WalletFixtures extends Fixture
             $entity = new Wallet();
             $entity->setName($wallet);
             $entity->setUser($this->getReference('user_' . $key));
+            $entity->setBalance(1000);
             $manager->persist($entity);
 
             $this->addReference('wallet_'. $key, $entity);

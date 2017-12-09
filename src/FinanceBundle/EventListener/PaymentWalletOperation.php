@@ -12,6 +12,7 @@ use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\OptimisticLockException;
 use FinanceBundle\Entity\Payment;
 use FinanceBundle\Entity\Wallet;
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 class PaymentWalletOperation
 {
@@ -31,6 +32,10 @@ class PaymentWalletOperation
 
         if ($walletFrom) {
             $balance = $walletFrom->getBalance() - $amount;
+
+            if ($balance < 0) {
+                throw new Exception('Not enough money');
+            }
 
             $walletFrom->setBalance($balance);
 

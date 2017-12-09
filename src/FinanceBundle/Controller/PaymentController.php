@@ -4,6 +4,7 @@ namespace FinanceBundle\Controller;
 
 use FinanceBundle\Entity\Payment;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -41,10 +42,18 @@ class PaymentController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+            try {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($payment);
+                $em->flush();
+            }catch (Exception $e){
+                return $this->render('FinanceBundle:payment:new.html.twig', array(
+                    'payment' => $payment,
+                    'form' => $form->createView(),
+                    'error' => $e->getMessage(),
+                ));
+            }
 
-            $em->persist($payment);
-            $em->flush();
 
             return $this->redirectToRoute('payment_show', array('id' => $payment->getId()));
         }
@@ -52,6 +61,7 @@ class PaymentController extends Controller
         return $this->render('FinanceBundle:payment:new.html.twig', array(
             'payment' => $payment,
             'form' => $form->createView(),
+            'error' => false,
         ));
     }
 

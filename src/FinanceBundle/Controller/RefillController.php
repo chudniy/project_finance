@@ -4,6 +4,7 @@ namespace FinanceBundle\Controller;
 
 use FinanceBundle\Entity\Refill;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -40,9 +41,18 @@ class RefillController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($refill);
-            $em->flush();
+            try {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($refill);
+                $em->flush();
+            } catch (Exception $e) {
+                return $this->render('FinanceBundle:refill:new.html.twig', array(
+                    'refill' => $refill,
+                    'form' => $form->createView(),
+                    'error' => $e->getMessage(),
+                ));
+            }
+
 
             return $this->redirectToRoute('refill_show', array('id' => $refill->getId()));
         }
@@ -50,6 +60,7 @@ class RefillController extends Controller
         return $this->render('FinanceBundle:refill:new.html.twig', array(
             'refill' => $refill,
             'form' => $form->createView(),
+            'error' => '',
         ));
     }
 
