@@ -46,7 +46,7 @@ class PaymentController extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($payment);
                 $em->flush();
-            }catch (Exception $e){
+            } catch (Exception $e) {
                 return $this->render('FinanceBundle:payment:new.html.twig', array(
                     'payment' => $payment,
                     'form' => $form->createView(),

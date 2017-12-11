@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Wallet</h1>
 
-    <table>
+    <table class="table" width="100%">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -20,16 +20,16 @@
         </tbody>
     </table>
 
-    <ul>
+    <ul class="list-unstyled list-inline">
         <li>
-            <a href="{{ path('wallet_index') }}">Back to the list</a>
+            <a href="{{ path('wallet_index') }}" class="btn btn-default">Back</a>
         </li>
         <li>
-            <a href="{{ path('wallet_edit', { 'id': wallet.id }) }}">Edit</a>
+            <a href="{{ path('wallet_edit', { 'id': wallet.id }) }}" class="btn btn-success">Edit</a>
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+                <input type="submit" value="Delete" class="btn btn-danger">
             {{ form_end(delete_form) }}
         </li>
     </ul>
