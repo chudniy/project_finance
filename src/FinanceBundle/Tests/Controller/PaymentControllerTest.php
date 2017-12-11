@@ -25,10 +25,7 @@ class PaymentControllerTest extends WebTestCase
             'financebundle_payment[amount]' => '100',
             'financebundle_payment[description]' => 'Test',
             'financebundle_payment[walletFrom]' => '1',
-            'financebundle_payment[walletTo]' => '2',
-            'financebundle_payment[date][year]' => '2017',
-            'financebundle_payment[date][month]' => '4',
-            'financebundle_payment[date][day]' => '13',
+            'financebundle_payment[date]' => '2017-04-11',
             'financebundle_payment[category]' => 1,
         ));
 
@@ -47,7 +44,6 @@ class PaymentControllerTest extends WebTestCase
 
         $form = $crawler->selectButton('Edit')->form(array(
             'financebundle_payment[amount]' => '200',
-            // ... other fields to fill
         ));
 
         $client->submit($form);

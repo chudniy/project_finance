@@ -3,6 +3,7 @@
 namespace FinanceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Wallet
@@ -25,6 +26,8 @@ class Wallet
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255, nullable=true)
+     *
+     * @Assert\NotBlank()
      */
     private $name;
 
@@ -33,7 +36,7 @@ class Wallet
      *
      * @ORM\Column(name="balance", type="integer", nullable=true)
      */
-    private $balance = 0;
+    private $balance;
 
     /**
      * @var \FinanceBundle\Entity\User
@@ -42,6 +45,8 @@ class Wallet
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="set null")
      * })
+     *
+     * @Assert\NotBlank()
      */
     private $user;
 
@@ -135,5 +140,13 @@ class Wallet
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getName();
     }
 }

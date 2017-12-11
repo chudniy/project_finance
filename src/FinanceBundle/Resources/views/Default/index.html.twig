@@ -1,9 +1,15 @@
-Hello World!
-<nav>
-    <ul class="navigation">
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<nav class="text-center">
+    <ul class="navigation list-unstyled list-inline">
         <li><a href="{{ path('wallet_index') }}">Wallets</a></li>
         <li><a href="{{ path('user_index') }}">Users</a></li>
         <li><a href="{{ path('payment_category_index') }}">Category</a></li>
         <li><a href="{{ path('payment_index') }}">Payments</a></li>
+        <li><a href="{{ path('refill_index') }}">Refill</a></li>
     </ul>
 </nav>
+
+    <h1 class="text-center">Hello World!</h1>
+{% endblock %}

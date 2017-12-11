@@ -18,7 +18,7 @@ class PaymentCategoryControllerTest extends WebTestCase
             $client->getResponse()->getStatusCode(),
             "Unexpected HTTP status code for GET /payment_category/"
         );
-        $crawler = $client->click($crawler->selectLink('Create a new paymentCategory')->link());
+        $crawler = $client->click($crawler->selectLink('Create a new payment category')->link());
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(

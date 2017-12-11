@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a49c43a1-32d1-4ca2-8961-385c84aab9f2" name="Default" comment="Added phpcs to travis and fixed problems">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/Fixtures.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/Fixtures.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentCategoryType.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentCategoryType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Form/UserType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentCategoryControllerTest.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentCategoryControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/UserControllerTest.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/UserControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php" />
+    <list default="true" id="a49c43a1-32d1-4ca2-8961-385c84aab9f2" name="Default" comment="Added refill event listener">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/show.html.twig" afterPath="$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/show.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/show.html.twig" afterPath="$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/show.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php" afterPath="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,114 +18,30 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <executablePath>composer</executablePath>
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/project_finance$Unit_Tests.coverage" NAME="Unit Tests Coverage Results" MODIFIED="1510773177152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myAutoScrollFromSource" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="389">
+              <caret line="31" column="71" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Payment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentCategory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/PaymentCategory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentCategoryControllerTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentCategoryControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-              <folding>
-                <marker date="1510480853317" expanded="true" signature="159:2028" ph="{...}" />
-                <marker date="1510480853317" expanded="true" signature="204:2026" ph="{...}" />
-                <marker date="1510480853317" expanded="true" signature="451:599" ph="..." />
-                <marker date="1510480853317" expanded="true" signature="797:915" ph="..." />
-                <marker date="1510480853317" expanded="true" signature="803:914" ph="..." />
-                <marker date="1510480853317" expanded="true" signature="1070:1206" ph="..." />
-                <marker date="1510480853317" expanded="true" signature="1364:1481" ph="..." />
-                <marker date="1510480853317" expanded="true" signature="1370:1480" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserControllerTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/UserControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WalletControllerTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentControllerTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Refill.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-              <folding>
-                <element signature="e#120#160#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PaymentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/PaymentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            <state relative-caret-position="2009">
+              <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,10 +49,21 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.yml.dist</find>
       <find>getBalance()</find>
+      <find>{% block integer_widget %}</find>
+      <find>$containerBuilder =</find>
+      <find>use Symfony\Component\DependencyInjection\ContainerBuilder;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,41 +73,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Model/RefillOreration.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Model/RefillOperation.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Controller/WalletController.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Controller/PaymentCategoryController.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Model/Refill.php" />
-        <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Controller/PaymentController.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/show.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/phpunit.xml.dist" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php" />
-        <option value="$PROJECT_DIR$/.scrutinizer.yml" />
-        <option value="$PROJECT_DIR$/phpmd-ruleset.xml" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/DefaultControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/PaymentCategory.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/web/app.php" />
-        <option value="$PROJECT_DIR$/web/app_dev.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/Fixtures.php" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/main.js" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/main.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/Resources/assets/scss/main.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/assets/scss/main.scss" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/refill/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/refill/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/form/fields.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/refill/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/RefillControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentCategoryType.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/paymentcategory/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/paymentcategory/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/paymentcategory/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentCategoryControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/UserControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/PaymentCategory.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Form/RefillType.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/EventListener/EmailSender.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/EventListener/PaymentWalletOperation.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Controller/PaymentController.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/WalletFixtures.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/EventListener/RefillWalletOperation.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/refill/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Controller/RefillController.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Entity/Refill.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/UserFixtures.php" />
         <option value="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/show.html.twig" />
       </list>
     </option>
   </component>
@@ -199,6 +132,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpDebugGeneral" xdebug_debug_port="9001" xdebug_force_break_when_outside_project="false" />
   <component name="PhpServers">
@@ -275,10 +211,10 @@
   </component>
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="127.0.01" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="4" />
+    <option name="y" value="18" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -291,43 +227,22 @@
             <id>Assignment issuesJavaScript</id>
           </State>
           <State>
-            <id>Bitwise operation issuesJavaScript</id>
-          </State>
-          <State>
             <id>CSS</id>
-          </State>
-          <State>
-            <id>Code SmellPHP</id>
           </State>
           <State>
             <id>Code StylePHP</id>
           </State>
           <State>
-            <id>Code quality toolsCSS</id>
-          </State>
-          <State>
-            <id>Code quality toolsJavaScript</id>
-          </State>
-          <State>
-            <id>Code style issuesCSS</id>
-          </State>
-          <State>
-            <id>Code style issuesJavaScript</id>
-          </State>
-          <State>
-            <id>CoffeeScript</id>
-          </State>
-          <State>
             <id>Control flow issuesJavaScript</id>
           </State>
           <State>
-            <id>Data flow issuesJavaScript</id>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
           </State>
           <State>
             <id>ECMAScript 6 migration aidsJavaScript</id>
-          </State>
-          <State>
-            <id>Error handlingJavaScript</id>
           </State>
           <State>
             <id>Flow type checkerJavaScript</id>
@@ -342,10 +257,13 @@
             <id>GeneralPHP</id>
           </State>
           <State>
-            <id>HTML</id>
+            <id>Ini Files</id>
           </State>
           <State>
-            <id>Internationalization issues</id>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JSON</id>
           </State>
           <State>
             <id>JavaScript</id>
@@ -357,22 +275,10 @@
             <id>JavaScript validity issuesJavaScript</id>
           </State>
           <State>
-            <id>Naming conventionsPHP</id>
-          </State>
-          <State>
-            <id>Node.jsJavaScript</id>
-          </State>
-          <State>
             <id>PHP</id>
           </State>
           <State>
             <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsCoffeeScript</id>
-          </State>
-          <State>
-            <id>Probable bugsJavaScript</id>
           </State>
           <State>
             <id>Probable bugsPHP</id>
@@ -384,13 +290,16 @@
             <id>Replaceable assignmentsPHP</id>
           </State>
           <State>
-            <id>Spelling</id>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+          <State>
+            <id>Type compatibilityPHP</id>
           </State>
           <State>
             <id>TypeScript</id>
-          </State>
-          <State>
-            <id>UnusedPHP</id>
           </State>
           <State>
             <id>XML</id>
@@ -398,10 +307,13 @@
           <State>
             <id>XPath</id>
           </State>
+          <State>
+            <id>XSLT</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>PhpUnusedAliasInspection</id>
+            <id>AngularJS</id>
           </State>
         </selected-state>
       </profile-state>
@@ -425,8 +337,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -437,42 +349,7 @@
             <path>
               <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="project_finance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_finance" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FinanceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -483,12 +360,21 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app/Resources/assets" />
       <recent name="$PROJECT_DIR$/src/FinanceBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/FinanceBundle/EventListener" />
+      <recent name="$PROJECT_DIR$/src/FinanceBundle/Repository" />
+      <recent name="$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -504,17 +390,29 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.Unit Tests">
-    <configuration name="Server" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="server:run" />
     <configuration name="Unit Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" directory="$PROJECT_DIR$/src/FinanceBundle/Tests" file="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/DefaultControllerTest.php" use_alternative_configuration_file="true" />
     </configuration>
-    <list size="2">
+    <configuration name="UserControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="FinanceBundle\Tests\Controller\UserControllerTest" file="$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/UserControllerTest.php" scope="Class" />
+    </configuration>
+    <configuration name="Server" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="server:run" />
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.Server" />
       <item index="1" class="java.lang.String" itemvalue="PHPUnit.Unit Tests" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.UserControllerTest" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.UserControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -523,7 +421,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509385395199</updated>
-      <workItem from="1509385396435" duration="78955000" />
+      <workItem from="1509385396435" duration="80124000" />
+      <workItem from="1510482796490" duration="5579000" />
+      <workItem from="1511014793522" duration="22745000" />
+      <workItem from="1511707583856" duration="1234000" />
+      <workItem from="1511708828859" duration="9050000" />
+      <workItem from="1511975992850" duration="150000" />
+      <workItem from="1511976463684" duration="1371000" />
+      <workItem from="1511977845781" duration="31814000" />
     </task>
     <task id="LOCAL-00001" summary="Install Symfony">
       <created>1509385558222</created>
@@ -756,70 +661,179 @@
       <option name="project" value="LOCAL" />
       <updated>1510162842747</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added phpcs to travis and fixed problems">
+      <created>1510481137085</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1510481137085</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added missing files">
+      <created>1510483312751</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1510483312751</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added missing files">
+      <created>1510483374278</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1510483374278</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added refill entity with CRUD">
+      <created>1510681315623</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1510681315623</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added tests for refill CRUD">
+      <created>1510683261307</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1510683261307</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added fixtures for user, wallet, payment category">
+      <created>1510771857164</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1510771857164</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Update payment entity">
+      <created>1510779652381</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1510779652381</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Created Repository for Payment and Refill entities and implement complex search">
+      <created>1510783774036</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1510783774036</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Homework 5 updated forms for Payment entity">
+      <created>1511381651254</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1511381651254</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Installed npm, gulp and gulp modules">
+      <created>1511711008142</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1511711008142</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Setup gulpfile.js, install DateTimePicker amd modify Payment and Refill forms">
+      <created>1511992107457</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1511992107457</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Updated user, category, and wallet forms">
+      <created>1511993550040</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1511993550040</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Added payment event listener">
+      <created>1512713525893</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1512713525893</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Added refill event listener">
+      <created>1512855979803</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1512855979803</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_Tests - 2017.11.05 at 22h 38m 54s.xml">
+    <history-entry file="Unit_Tests - 2017.11.30 at 00h 12m 15s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.05 at 22h 47m 41s.xml">
+    <history-entry file="Unit_Tests - 2017.12.09 at 13h 08m 59s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.06 at 00h 02m 54s.xml">
+    <history-entry file="Unit_Tests - 2017.12.09 at 13h 14m 31s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.07 at 22h 23m 30s.xml">
+    <history-entry file="Unit_Tests - 2017.12.11 at 22h 03m 27s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.07 at 22h 30m 18s.xml">
+    <history-entry file="Unit_Tests - 2017.12.11 at 22h 18m 18s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.07 at 22h 31m 09s.xml">
+    <history-entry file="Unit_Tests - 2017.12.11 at 22h 24m 41s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.07 at 22h 31m 27s.xml">
+    <history-entry file="Unit_Tests - 2017.12.11 at 22h 30m 09s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.07 at 22h 52m 12s.xml">
+    <history-entry file="Unit_Tests - 2017.12.11 at 22h 44m 47s.xml">
       <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.07 at 23h 06m 08s.xml">
-      <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UserControllerTest - 2017.12.11 at 22h 31m 56s.xml">
+      <configuration name="UserControllerTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Unit_Tests - 2017.11.08 at 19h 52m 21s.xml">
-      <configuration name="Unit Tests" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="UserControllerTest - 2017.12.11 at 22h 44m 23s.xml">
+      <configuration name="UserControllerTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78955000" />
+    <option name="totallyTimeSpent" value="182678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5040431" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.49595687" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5061995" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30163598" sideWeight="0.4954178" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.49703503" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.49380055" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38343558" sideWeight="0.48948786" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20808625" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997955" sideWeight="0.49703503" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991913" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -851,12 +865,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Install Symfony" />
-    <MESSAGE value="Create FinanceBundle" />
-    <MESSAGE value="Create Entities : Payment, PaymentCategory, User, Wallet" />
-    <MESSAGE value="Create base CRUD controllers and logic of payments" />
-    <MESSAGE value="Create base CRUD controllers and logic of payments (add some files)" />
-    <MESSAGE value="Create Refill Service" />
     <MESSAGE value="Created UnitTests for Controllers" />
     <MESSAGE value="Updated IDE settings" />
     <MESSAGE value="Created travis.yml" />
@@ -870,432 +878,487 @@
     <MESSAGE value="Fixed travis conf" />
     <MESSAGE value="Fixed issues and code style" />
     <MESSAGE value="Added phpcs to travis and fixed problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added phpcs to travis and fixed problems" />
+    <MESSAGE value="Added missing files" />
+    <MESSAGE value="Added refill entity with CRUD" />
+    <MESSAGE value="Added tests for refill CRUD" />
+    <MESSAGE value="Added fixtures for user, wallet, payment category" />
+    <MESSAGE value="Update payment entity" />
+    <MESSAGE value="Created Repository for Payment and Refill entities and implement complex search" />
+    <MESSAGE value="Homework 5 updated forms for Payment entity" />
+    <MESSAGE value="Installed npm, gulp and gulp modules" />
+    <MESSAGE value="Setup gulpfile.js, install DateTimePicker amd modify Payment and Refill forms" />
+    <MESSAGE value="Updated user, category, and wallet forms" />
+    <MESSAGE value="Added payment event listener" />
+    <MESSAGE value="Added refill event listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added refill event listener" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Jack/FinanceBundle/FinanceBundle.php">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/form/fields.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="79" lean-forward="false" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/RefillControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/refill/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/PaymentCategoryType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/config/doctrine/Payment.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/config/routing/user.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/config/routing/paymentcategory.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
-            <element signature="e#44#74#0#PHP" expanded="false" />
+            <element signature="e#38#79#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/PaymentCategoryController.php">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/config/routing/wallet.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/WalletController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="100" column="7" lean-forward="false" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+        <state relative-caret-position="396">
+          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
-            <element signature="e#44#76#0#PHP" expanded="false" />
+            <element signature="e#38#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="-7">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#38#70#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/paymentcategory/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/paymentcategory/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="26" column="71" lean-forward="false" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../family_finance/vendor/symfony/symfony/src/Symfony/Component/DomCrawler/Crawler.php">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="567" column="0" lean-forward="false" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
+        <state relative-caret-position="407">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../family_finance/tests/AppBundle/Controller/DefaultControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="28" column="102" lean-forward="false" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/ErrorHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="653" column="0" lean-forward="false" selection-start-line="653" selection-start-column="0" selection-end-line="653" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DomCrawler/Crawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="851" column="0" lean-forward="false" selection-start-line="851" selection-start-column="0" selection-end-line="851" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/logs/test.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85410">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="52" lean-forward="false" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="117" lean-forward="false" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/WalletType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.scrutinizer.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpmd-ruleset.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/SymfonyRequirements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="145" column="56" lean-forward="true" selection-start-line="145" selection-start-column="56" selection-end-line="145" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DomCrawler/Field/ChoiceFormField.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-791">
-          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="57" column="15" lean-forward="true" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/Fixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="252">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
-            <element signature="e#129#172#0#PHP" expanded="true" />
-            <marker date="1510480853721" expanded="true" signature="324:764" ph="{...}" />
+            <element signature="e#12#26#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/DefaultControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/PaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentCategoryControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
-            <marker date="1510480853317" expanded="true" signature="159:2028" ph="{...}" />
-            <marker date="1510480853317" expanded="true" signature="204:2026" ph="{...}" />
-            <marker date="1510480853317" expanded="true" signature="451:599" ph="..." />
-            <marker date="1510480853317" expanded="true" signature="797:915" ph="..." />
-            <marker date="1510480853317" expanded="true" signature="803:914" ph="..." />
-            <marker date="1510480853317" expanded="true" signature="1070:1206" ph="..." />
-            <marker date="1510480853317" expanded="true" signature="1364:1481" ph="..." />
-            <marker date="1510480853317" expanded="true" signature="1370:1480" ph="..." />
+            <element signature="e#12#26#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/UserControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/paymentcategory/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="252">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
-            <element signature="e#120#160#0#PHP" expanded="true" />
+            <element signature="e#12#26#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/PaymentCategory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="198">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="193" column="21" lean-forward="false" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/RefillType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Form/PaymentType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Service/Refill.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="2898" column="7" lean-forward="false" selection-start-line="2898" selection-start-column="7" selection-end-line="2898" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/payment/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#265#272#1#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/refill/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="e#264#271#1#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Refill.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="41" column="6" lean-forward="false" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/RefillController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/EventListener/PaymentWalletOperation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#126#168#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/EventListener/RefillWalletOperation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+          <folding>
+            <element signature="e#126#168#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/Wallet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/UserFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/BrowserKit/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="472" column="20" lean-forward="false" selection-start-line="472" selection-start-column="20" selection-end-line="472" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/PaymentCategoryControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/WalletController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="47" column="90" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="39" column="70" lean-forward="false" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/refill/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="43" column="74" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/wallet/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="74" lean-forward="false" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Resources/views/user/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/UserControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Tests/Controller/WalletControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/DataFixtures/ORM/WalletFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="31" column="71" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FinanceBundle/Controller/PaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2009">
+          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.12886596" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

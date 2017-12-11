@@ -14,6 +14,10 @@ finance_payment_category:
     resource: "@FinanceBundle/Resources/config/routing/paymentcategory.yml"
     prefix:   /payment_category
 
+finance_refill:
+    resource: "@FinanceBundle/Resources/config/routing/refill.yml"
+    prefix:   /refill
+
 finance_homepage:
     path:     /
     defaults: { _controller: FinanceBundle:Default:index }

@@ -3,6 +3,7 @@
 namespace FinanceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Payment
@@ -10,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="payment", indexes={
  *     @ORM\Index(name="date", columns={"date"}),
  *     @ORM\Index(name="fk_payment_payment_category", columns={"category_id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="FinanceBundle\Repository\PaymentRepository")
  */
 class Payment
 {
@@ -27,6 +28,12 @@ class Payment
      * @var integer
      *
      * @ORM\Column(name="amount", type="integer", nullable=true)
+     *
+     * @Assert\NotBlank()
+     * @Assert\Type(
+     *     type="integer",
+     *     message="The value {{ value }} is not a valid {{ type }}."
+     * )
      */
     private $amount;
 
@@ -34,27 +41,35 @@ class Payment
      * @var string
      *
      * @ORM\Column(name="description", type="text", length=65535, nullable=true)
+     *
+     * @Assert\Length(
+     *      max = 200,
+     *      maxMessage = "Your first name cannot be longer than {{ limit }} characters"
+     * )
      */
     private $description;
 
     /**
-     * @var integer
+     * @var \FinanceBundle\Entity\Wallet
      *
-     * @ORM\Column(name="wallet_from", type="integer", nullable=true)
+     * @ORM\ManyToOne(targetEntity="Wallet")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="wallet_from_id", referencedColumnName="id")
+     * })
+     *
+     * @Assert\NotBlank()
      */
     private $walletFrom;
 
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="wallet_to", type="integer", nullable=true)
-     */
-    private $walletTo;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date", type="date", nullable=true)
+     *
+     * @Assert\NotBlank()
+     * @Assert\Type("\DateTime")
+     *
      */
     private $date;
 
@@ -65,6 +80,8 @@ class Payment
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="category_id", referencedColumnName="id", onDelete="set null")
      * })
+     *
+     * @Assert\NotBlank()
      */
     private $category;
 
@@ -145,36 +162,13 @@ class Payment
     /**
      * Get walletFrom
      *
-     * @return integer
+     * @return Wallet
      */
     public function getWalletFrom()
     {
         return $this->walletFrom;
     }
 
-    /**
-     * Set walletTo
-     *
-     * @param integer $walletTo
-     *
-     * @return Payment
-     */
-    public function setWalletTo($walletTo)
-    {
-        $this->walletTo = $walletTo;
-
-        return $this;
-    }
-
-    /**
-     * Get walletTo
-     *
-     * @return integer
-     */
-    public function getWalletTo()
-    {
-        return $this->walletTo;
-    }
 
     /**
      * Set date

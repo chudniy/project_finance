@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Refill</h1>
+
+    <table class="table" width="100%">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ refill.id }}</td>
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <td>{{ refill.amount }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ refill.description }}</td>
+            </tr>
+            <tr>
+                <th>Walletfrom</th>
+                <td>{{ refill.walletFrom }}</td>
+            </tr>
+            <tr>
+                <th>Walletto</th>
+                <td>{{ refill.walletTo }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{% if refill.date %}{{ refill.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="list-unstyled list-inline">
+        <li>
+            <a href="{{ path('refill_index') }}" class="btn btn-default">Back</a>
+        </li>
+        <li>
+            <a href="{{ path('refill_edit', { 'id': refill.id }) }}" class="btn btn-success">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete" class="btn btn-danger">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

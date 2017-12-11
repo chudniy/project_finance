@@ -3,8 +3,8 @@
 namespace FinanceBundle\Controller;
 
 use FinanceBundle\Entity\Payment;
-use FinanceBundle\Service\Refill;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Config\Definition\Exception\Exception;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -15,13 +15,14 @@ class PaymentController extends Controller
 {
     /**
      * Lists all payment entities.
-     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $payments = $em->getRepository('FinanceBundle:Payment')->findAll();
+        $payments = $em->getRepository('FinanceBundle:Payment')->paymentByRequest($request);
 
         return $this->render('FinanceBundle:payment:index.html.twig', array(
             'payments' => $payments,
@@ -32,22 +33,27 @@ class PaymentController extends Controller
      * Creates a new payment entity.
      *
      * @param Request $request
-     * @param Refill $refill
      * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
-    public function newAction(Request $request, Refill $refill)
+    public function newAction(Request $request)
     {
         $payment = new Payment();
         $form = $this->createForm('FinanceBundle\Form\PaymentType', $payment);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+            try {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($payment);
+                $em->flush();
+            } catch (Exception $e) {
+                return $this->render('FinanceBundle:payment:new.html.twig', array(
+                    'payment' => $payment,
+                    'form' => $form->createView(),
+                    'error' => $e->getMessage(),
+                ));
+            }
 
-            $refill->familyBalance($payment);
-
-            $em->persist($payment);
-            $em->flush();
 
             return $this->redirectToRoute('payment_show', array('id' => $payment->getId()));
         }
@@ -55,6 +61,7 @@ class PaymentController extends Controller
         return $this->render('FinanceBundle:payment:new.html.twig', array(
             'payment' => $payment,
             'form' => $form->createView(),
+            'error' => false,
         ));
     }
 
@@ -123,7 +130,7 @@ class PaymentController extends Controller
      *
      * @param Payment $payment The payment entity
      *
-     * @return \Symfony\Component\Form\Form The form
+     * @return \Symfony\Component\Form\FormInterface The form
      */
     private function createDeleteForm(Payment $payment)
     {

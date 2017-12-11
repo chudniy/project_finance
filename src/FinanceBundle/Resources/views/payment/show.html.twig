@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Payment</h1>
 
-    <table>
+    <table class="table" width="100%">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -14,6 +14,10 @@
                 <td>{{ payment.amount }}</td>
             </tr>
             <tr>
+                <th>Category</th>
+                <td>{{ payment.category }}</td>
+            </tr>
+            <tr>
                 <th>Description</th>
                 <td>{{ payment.description }}</td>
             </tr>
@@ -22,26 +26,22 @@
                 <td>{{ payment.walletFrom }}</td>
             </tr>
             <tr>
-                <th>Walletto</th>
-                <td>{{ payment.walletTo }}</td>
-            </tr>
-            <tr>
                 <th>Date</th>
                 <td>{% if payment.date %}{{ payment.date|date('Y-m-d') }}{% endif %}</td>
             </tr>
         </tbody>
     </table>
 
-    <ul>
+    <ul class="list-unstyled list-inline">
         <li>
-            <a href="{{ path('payment_index') }}">Back to the list</a>
+            <a href="{{ path('payment_index') }}" class="btn btn-default">Back</a>
         </li>
         <li>
-            <a href="{{ path('payment_edit', { 'id': payment.id }) }}">Edit</a>
+            <a href="{{ path('payment_edit', { 'id': payment.id }) }}" class="btn btn-success">Edit</a>
         </li>
         <li>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
+                <input type="submit" value="Delete" class="btn btn-danger">
             {{ form_end(delete_form) }}
         </li>
     </ul>

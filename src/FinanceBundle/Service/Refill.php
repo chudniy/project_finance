@@ -67,7 +67,7 @@ class Refill
         $walletTo = $this->em->getRepository('FinanceBundle:Wallet')->find($walletToId);
 
         if ($walletFrom && $walletTo) {
-            $walletFrom->setBalance($walletFrom->getBalance() + $amount);
+            $walletFrom->setBalance($walletFrom->getBalance() - $amount);
             $walletTo->setBalance($walletTo->getBalance() + $amount);
 
             $this->em->flush();

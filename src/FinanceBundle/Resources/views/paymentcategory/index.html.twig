@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Paymentcategories list</h1>
 
-    <table>
+    <table class="table " width="100%">
         <thead>
             <tr>
                 <th>Id</th>
@@ -14,26 +14,16 @@
         <tbody>
         {% for paymentCategory in paymentCategories %}
             <tr>
-                <td><a href="{{ path('payment_category_show', { 'id': paymentCategory.id }) }}">{{ paymentCategory.id }}</a></td>
+                <td>{{ paymentCategory.id }}</td>
                 <td>{{ paymentCategory.name }}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('payment_category_show', { 'id': paymentCategory.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('payment_category_edit', { 'id': paymentCategory.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <a href="{{ path('payment_category_edit', { 'id': paymentCategory.id }) }}" class="btn btn-success">Edit</a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('payment_category_new') }}">Create a new paymentCategory</a>
-        </li>
-    </ul>
+    <a href="{{ path('payment_category_new') }}" class="btn btn-default">Create a new payment category</a>
+
 {% endblock %}

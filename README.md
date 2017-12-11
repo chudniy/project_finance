@@ -1,3 +1,6 @@
+Finance [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/chudniy/project_finance/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/chudniy/project_finance/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/chudniy/project_finance/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/chudniy/project_finance/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/chudniy/project_finance/badges/build.png?b=master)](https://scrutinizer-ci.com/g/chudniy/project_finance/build-status/master)
+=========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+
 Symfony Standard Edition
 ========================
 
